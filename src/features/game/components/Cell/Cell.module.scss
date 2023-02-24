@@ -1,0 +1,41 @@
+.cell {
+  padding-top: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,1);
+  border: 0;
+  cursor: pointer;
+  color: white;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+    outline: 0;
+  }
+
+  &:disabled {
+    opacity: 1;
+  }
+
+  &__winner {
+    background-color: red;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 7.8rem;
+}
